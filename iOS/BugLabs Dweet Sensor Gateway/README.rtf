@@ -1,0 +1,24 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww19600\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \
+ST/ARROW Dweet Sensor Gateway iOS app\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+The Dweet Sensor Gateway app provides a link between the sensors on the NUCLEO-F401RE+X-NUCLEO-IDB04A1+X-NUCLEO-IKS01A1 development system (running stock ST BlueMS1 firmware) and the BugLabs dweet.io cloud. \
+\
+\
+Notes:\
+\
+- The bundle identifier will need to be changed to something arrow specific after a new app is created in iTunesConnect.\
+- The app is currently set to randomize the dweet.io thing name each time the app starts. This can be changed to only randomize the thing name once when the app is run for the very first time. See comments in ScanController.m.\
+- The app is designed to work only with the ST dev system running the BlueMS1 firmware with or without a license for ST MotionFX sensor fusion. If MotionFX is desired, a project define can be set that will configure the iOS app to send quaternions to dweet.io. Otherwise, the iOS will only use the ST dev system\'92s magnetometer to send an approximate compass heading to dweet.io. The accuracy of the heading is enhanced when the ST dev system has been \'91calibrated\'92. See define in DweetController.m for MotionFX vs magnetometer define.\
+- The app uses a pre-release version of the Dweet iOS Library. Contact us if a new version is required after release.\
+- The app icon is not \'91hi-res\'92 enough for release on the app store. The Arrow art assets supplied weren\'92t high res enough to work with. If you like the current icon, we can work on making it \'91app store ready\'92.\
+\
+\
+\
+}

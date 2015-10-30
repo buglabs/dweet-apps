@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A02F7D11BBB841C006B2CD3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A02F7CD1BBB841C006B2CD3 /* Default-568h@2x.png */; };
+		3A02F7D21BBB841C006B2CD3 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A02F7CE1BBB841C006B2CD3 /* Default-667h@2x.png */; };
+		3A02F7D31BBB841C006B2CD3 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A02F7CF1BBB841C006B2CD3 /* Default-736h@3x.png */; };
+		3A02F7D41BBB841C006B2CD3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A02F7D01BBB841C006B2CD3 /* Default.png */; };
+		3AABC4711BBB88BF00898677 /* buglogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AABC4701BBB88BF00898677 /* buglogo.png */; };
+		3AABC4741BBB88FB00898677 /* adjectives.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3AABC4721BBB88FB00898677 /* adjectives.txt */; };
+		3AABC4751BBB88FB00898677 /* nouns.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3AABC4731BBB88FB00898677 /* nouns.txt */; };
+		3AABC4781BBB899200898677 /* ConfigController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AABC4771BBB899200898677 /* ConfigController.m */; };
+		3AABC47A1BBB952D00898677 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AABC4791BBB952D00898677 /* CoreLocation.framework */; };
+		3AABC47C1BBFED6600898677 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AABC47B1BBFED6600898677 /* AVFoundation.framework */; };
+		3ABD16A11B27CD160041FEDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD16A01B27CD160041FEDF /* main.m */; };
+		3ABD16A41B27CD160041FEDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD16A31B27CD160041FEDF /* AppDelegate.m */; };
+		3ABD16A71B27CD160041FEDF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD16A61B27CD160041FEDF /* ViewController.m */; };
+		3ABD16AA1B27CD160041FEDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ABD16A81B27CD160041FEDF /* Main.storyboard */; };
+		3ABD16AC1B27CD160041FEDF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ABD16AB1B27CD160041FEDF /* Images.xcassets */; };
+		3ABD16AF1B27CD160041FEDF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ABD16AD1B27CD160041FEDF /* LaunchScreen.xib */; };
+		3ABD16BB1B27CD160041FEDF /* dweet_ios_sensorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD16BA1B27CD160041FEDF /* dweet_ios_sensorTests.m */; };
+		3ABD16FB1B2B802F0041FEDF /* Dweet_ios.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD16F81B2B802F0041FEDF /* Dweet_ios.m */; };
+		3ABD16FC1B2B802F0041FEDF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD16FA1B2B802F0041FEDF /* Reachability.m */; };
+		3ABD16FE1B2D1D200041FEDF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ABD16FD1B2D1D200041FEDF /* CoreMotion.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3ABD16B51B27CD160041FEDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ABD16931B27CD160041FEDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3ABD169A1B27CD160041FEDF;
+			remoteInfo = "dweet-ios-sensor";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3A02F7CD1BBB841C006B2CD3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3A02F7CE1BBB841C006B2CD3 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		3A02F7CF1BBB841C006B2CD3 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		3A02F7D01BBB841C006B2CD3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3AABC4701BBB88BF00898677 /* buglogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buglogo.png; sourceTree = "<group>"; };
+		3AABC4721BBB88FB00898677 /* adjectives.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = adjectives.txt; sourceTree = "<group>"; };
+		3AABC4731BBB88FB00898677 /* nouns.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nouns.txt; sourceTree = "<group>"; };
+		3AABC4761BBB899200898677 /* ConfigController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigController.h; sourceTree = "<group>"; };
+		3AABC4771BBB899200898677 /* ConfigController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigController.m; sourceTree = "<group>"; };
+		3AABC4791BBB952D00898677 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3AABC47B1BBFED6600898677 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3ABD169B1B27CD160041FEDF /* dweet-ios-sensor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dweet-ios-sensor.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ABD169F1B27CD160041FEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ABD16A01B27CD160041FEDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3ABD16A21B27CD160041FEDF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3ABD16A31B27CD160041FEDF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3ABD16A51B27CD160041FEDF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3ABD16A61B27CD160041FEDF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3ABD16A91B27CD160041FEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3ABD16AB1B27CD160041FEDF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3ABD16AE1B27CD160041FEDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3ABD16B41B27CD160041FEDF /* dweet-ios-sensorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dweet-ios-sensorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ABD16B91B27CD160041FEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ABD16BA1B27CD160041FEDF /* dweet_ios_sensorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dweet_ios_sensorTests.m; sourceTree = "<group>"; };
+		3ABD16F71B2B802F0041FEDF /* Dweet_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dweet_ios.h; path = "../../Dweet-ios/Dweet-ios/Dweet_ios.h"; sourceTree = "<group>"; };
+		3ABD16F81B2B802F0041FEDF /* Dweet_ios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dweet_ios.m; path = "../../Dweet-ios/Dweet-ios/Dweet_ios.m"; sourceTree = "<group>"; };
+		3ABD16F91B2B802F0041FEDF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "../../Dweet-ios/Dweet-ios/Reachability.h"; sourceTree = "<group>"; };
+		3ABD16FA1B2B802F0041FEDF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "../../Dweet-ios/Dweet-ios/Reachability.m"; sourceTree = "<group>"; };
+		3ABD16FD1B2D1D200041FEDF /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3ABD16981B27CD160041FEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AABC47C1BBFED6600898677 /* AVFoundation.framework in Frameworks */,
+				3AABC47A1BBB952D00898677 /* CoreLocation.framework in Frameworks */,
+				3ABD16FE1B2D1D200041FEDF /* CoreMotion.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ABD16B11B27CD160041FEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A02F7CC1BBB841C006B2CD3 /* gfx */ = {
+			isa = PBXGroup;
+			children = (
+				3AABC4701BBB88BF00898677 /* buglogo.png */,
+				3A02F7CD1BBB841C006B2CD3 /* Default-568h@2x.png */,
+				3A02F7CE1BBB841C006B2CD3 /* Default-667h@2x.png */,
+				3A02F7CF1BBB841C006B2CD3 /* Default-736h@3x.png */,
+				3A02F7D01BBB841C006B2CD3 /* Default.png */,
+			);
+			path = gfx;
+			sourceTree = "<group>";
+		};
+		3ABD16921B27CD160041FEDF = {
+			isa = PBXGroup;
+			children = (
+				3AABC47B1BBFED6600898677 /* AVFoundation.framework */,
+				3AABC4791BBB952D00898677 /* CoreLocation.framework */,
+				3ABD16FD1B2D1D200041FEDF /* CoreMotion.framework */,
+				3ABD169D1B27CD160041FEDF /* dweet-ios-sensor */,
+				3ABD16B71B27CD160041FEDF /* dweet-ios-sensorTests */,
+				3ABD169C1B27CD160041FEDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3ABD169C1B27CD160041FEDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3ABD169B1B27CD160041FEDF /* dweet-ios-sensor.app */,
+				3ABD16B41B27CD160041FEDF /* dweet-ios-sensorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3ABD169D1B27CD160041FEDF /* dweet-ios-sensor */ = {
+			isa = PBXGroup;
+			children = (
+				3AABC4761BBB899200898677 /* ConfigController.h */,
+				3AABC4771BBB899200898677 /* ConfigController.m */,
+				3AABC4721BBB88FB00898677 /* adjectives.txt */,
+				3AABC4731BBB88FB00898677 /* nouns.txt */,
+				3A02F7CC1BBB841C006B2CD3 /* gfx */,
+				3ABD16A21B27CD160041FEDF /* AppDelegate.h */,
+				3ABD16A31B27CD160041FEDF /* AppDelegate.m */,
+				3ABD16A51B27CD160041FEDF /* ViewController.h */,
+				3ABD16A61B27CD160041FEDF /* ViewController.m */,
+				3ABD16F71B2B802F0041FEDF /* Dweet_ios.h */,
+				3ABD16F81B2B802F0041FEDF /* Dweet_ios.m */,
+				3ABD16F91B2B802F0041FEDF /* Reachability.h */,
+				3ABD16FA1B2B802F0041FEDF /* Reachability.m */,
+				3ABD16A81B27CD160041FEDF /* Main.storyboard */,
+				3ABD16AB1B27CD160041FEDF /* Images.xcassets */,
+				3ABD16AD1B27CD160041FEDF /* LaunchScreen.xib */,
+				3ABD169E1B27CD160041FEDF /* Supporting Files */,
+			);
+			path = "dweet-ios-sensor";
+			sourceTree = "<group>";
+		};
+		3ABD169E1B27CD160041FEDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3ABD169F1B27CD160041FEDF /* Info.plist */,
+				3ABD16A01B27CD160041FEDF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3ABD16B71B27CD160041FEDF /* dweet-ios-sensorTests */ = {
+			isa = PBXGroup;
+			children = (
+				3ABD16BA1B27CD160041FEDF /* dweet_ios_sensorTests.m */,
+				3ABD16B81B27CD160041FEDF /* Supporting Files */,
+			);
+			path = "dweet-ios-sensorTests";
+			sourceTree = "<group>";
+		};
+		3ABD16B81B27CD160041FEDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3ABD16B91B27CD160041FEDF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3ABD169A1B27CD160041FEDF /* dweet-ios-sensor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ABD16BE1B27CD160041FEDF /* Build configuration list for PBXNativeTarget "dweet-ios-sensor" */;
+			buildPhases = (
+				3ABD16971B27CD160041FEDF /* Sources */,
+				3ABD16981B27CD160041FEDF /* Frameworks */,
+				3ABD16991B27CD160041FEDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "dweet-ios-sensor";
+			productName = "dweet-ios-sensor";
+			productReference = 3ABD169B1B27CD160041FEDF /* dweet-ios-sensor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3ABD16B31B27CD160041FEDF /* dweet-ios-sensorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ABD16C11B27CD160041FEDF /* Build configuration list for PBXNativeTarget "dweet-ios-sensorTests" */;
+			buildPhases = (
+				3ABD16B01B27CD160041FEDF /* Sources */,
+				3ABD16B11B27CD160041FEDF /* Frameworks */,
+				3ABD16B21B27CD160041FEDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3ABD16B61B27CD160041FEDF /* PBXTargetDependency */,
+			);
+			name = "dweet-ios-sensorTests";
+			productName = "dweet-ios-sensorTests";
+			productReference = 3ABD16B41B27CD160041FEDF /* dweet-ios-sensorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3ABD16931B27CD160041FEDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "PBJ Studios";
+				TargetAttributes = {
+					3ABD169A1B27CD160041FEDF = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = TVG6KLCCT8;
+					};
+					3ABD16B31B27CD160041FEDF = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 3ABD169A1B27CD160041FEDF;
+					};
+				};
+			};
+			buildConfigurationList = 3ABD16961B27CD160041FEDF /* Build configuration list for PBXProject "dweet-ios-sensor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3ABD16921B27CD160041FEDF;
+			productRefGroup = 3ABD169C1B27CD160041FEDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3ABD169A1B27CD160041FEDF /* dweet-ios-sensor */,
+				3ABD16B31B27CD160041FEDF /* dweet-ios-sensorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3ABD16991B27CD160041FEDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ABD16AA1B27CD160041FEDF /* Main.storyboard in Resources */,
+				3A02F7D11BBB841C006B2CD3 /* Default-568h@2x.png in Resources */,
+				3AABC4751BBB88FB00898677 /* nouns.txt in Resources */,
+				3ABD16AF1B27CD160041FEDF /* LaunchScreen.xib in Resources */,
+				3ABD16AC1B27CD160041FEDF /* Images.xcassets in Resources */,
+				3A02F7D41BBB841C006B2CD3 /* Default.png in Resources */,
+				3AABC4711BBB88BF00898677 /* buglogo.png in Resources */,
+				3AABC4741BBB88FB00898677 /* adjectives.txt in Resources */,
+				3A02F7D21BBB841C006B2CD3 /* Default-667h@2x.png in Resources */,
+				3A02F7D31BBB841C006B2CD3 /* Default-736h@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ABD16B21B27CD160041FEDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3ABD16971B27CD160041FEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ABD16A71B27CD160041FEDF /* ViewController.m in Sources */,
+				3ABD16FB1B2B802F0041FEDF /* Dweet_ios.m in Sources */,
+				3ABD16A41B27CD160041FEDF /* AppDelegate.m in Sources */,
+				3ABD16A11B27CD160041FEDF /* main.m in Sources */,
+				3ABD16FC1B2B802F0041FEDF /* Reachability.m in Sources */,
+				3AABC4781BBB899200898677 /* ConfigController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ABD16B01B27CD160041FEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ABD16BB1B27CD160041FEDF /* dweet_ios_sensorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3ABD16B61B27CD160041FEDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3ABD169A1B27CD160041FEDF /* dweet-ios-sensor */;
+			targetProxy = 3ABD16B51B27CD160041FEDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3ABD16A81B27CD160041FEDF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ABD16A91B27CD160041FEDF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3ABD16AD1B27CD160041FEDF /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3ABD16AE1B27CD160041FEDF /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3ABD16BC1B27CD160041FEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3ABD16BD1B27CD160041FEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3ABD16BF1B27CD160041FEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "dweet-ios-sensor/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dweet-ios-sensor",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buglabs.dweet-ios-sensor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3ABD16C01B27CD160041FEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "dweet-ios-sensor/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dweet-ios-sensor",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.buglabs.dweet-ios-sensor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3ABD16C21B27CD160041FEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "dweet-ios-sensorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pbj.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dweet-ios-sensor.app/dweet-ios-sensor";
+			};
+			name = Debug;
+		};
+		3ABD16C31B27CD160041FEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "dweet-ios-sensorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pbj.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/dweet-ios-sensor.app/dweet-ios-sensor";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3ABD16961B27CD160041FEDF /* Build configuration list for PBXProject "dweet-ios-sensor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ABD16BC1B27CD160041FEDF /* Debug */,
+				3ABD16BD1B27CD160041FEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ABD16BE1B27CD160041FEDF /* Build configuration list for PBXNativeTarget "dweet-ios-sensor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ABD16BF1B27CD160041FEDF /* Debug */,
+				3ABD16C01B27CD160041FEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ABD16C11B27CD160041FEDF /* Build configuration list for PBXNativeTarget "dweet-ios-sensorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ABD16C21B27CD160041FEDF /* Debug */,
+				3ABD16C31B27CD160041FEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3ABD16931B27CD160041FEDF /* Project object */;
+}

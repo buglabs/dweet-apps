@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:theme="@android:style/Theme.WithActionBar"
+    android:layout_height="match_parent"
+    android:background="#AAAAAA"
+    tools:context="com.buglabs.dweetsensorgateway.SensorDetailActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="18dp"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="#66AAAA">
+
+        <TextView android:text="BlueMS1"
+            android:id="@+id/devname"
+            android:layout_width="fill_parent"
+            android:layout_height="26dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="3dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/dnarrow"
+            />
+        <TextView android:text="funny-thingname"
+            android:id="@+id/thingname"
+            android:layout_width="fill_parent"
+            android:layout_height="26dp"
+            android:layout_marginTop="2dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="20sp"
+            />
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal"
+        android:layout_gravity="end">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+        <TextView android:text="status:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            />
+
+        <View
+            android:id="@+id/statusdot"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="#808080"
+            />
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="18dp"
+        android:background="#000000"
+        />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="18dp"
+        />
+
+
+    <ListView
+        android:id="@+id/detailtable"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:divider="#808080"
+        android:dividerHeight="2px"
+        />
+
+
+
+    </LinearLayout>

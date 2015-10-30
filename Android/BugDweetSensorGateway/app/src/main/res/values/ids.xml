@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="scan_menu_action" type="id"/>
+    <item name="dweet_cfg_menu_action" type="id"/>
+    <item name="menu_spinner" type="id"/>
+    <item name="detail_share_menu_action" type="id"/>
+</resources>

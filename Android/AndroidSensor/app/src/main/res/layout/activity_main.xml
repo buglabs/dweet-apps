@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:theme="@android:style/Theme.Holo"
+    android:layout_height="match_parent"
+    android:background="#AAAAAA"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="-3dp"
+        android:layout_height="6dp"
+        android:background="#000000"
+    />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="#000000"
+        />
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#dddddd"
+
+        >
+
+        <TextView android:text="dweeting to:"
+            android:id="@+id/devname"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="0dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="11sp"
+            android:textStyle="italic"
+            />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:scaleType="fitCenter"
+            />
+        <TextView android:text="funny-thingname"
+            android:id="@+id/thingname"
+            android:layout_width="fill_parent"
+            android:layout_height="26dp"
+            android:layout_marginTop="-6dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textColor="#000000"
+            android:fontFamily="sans-serif-light"
+            android:textSize="20sp"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="-18dp"
+            android:orientation="horizontal"
+            android:layout_gravity="end">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <TextView android:text="status:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:textStyle="italic|bold"
+                />
+
+            <View
+                android:id="@+id/statusdot"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center_vertical"
+                android:background="#808080"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        />
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="13dp"
+        />
+
+
+    <ListView
+        android:id="@+id/detailtable"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:divider="#808080"
+        android:dividerHeight="2px"
+        />
+
+
+
+
+
+</LinearLayout>

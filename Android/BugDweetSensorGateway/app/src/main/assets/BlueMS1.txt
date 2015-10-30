@@ -1,0 +1,93 @@
+{
+"services": {
+"1BC5D5A5-0200-D082-E211-77E4401A8242": {
+"active": true,
+"name": "environmental",
+"characteristics": {
+"1BC5D5A5-0200-E3A9-E211-77E420552EA3": {
+"name": "temperature",
+"active": true,
+"treatment": {
+"width": 16,
+"signed": false,
+"count": "1",
+"scaling": 10,
+"postprocess1": "",
+"postprocess2": "",
+"dweetname": "Temperature",
+"dweetval": "%v0%"
+}
+},
+"1BC5D5A5-0200-73A0-E211-8CE4600BC501": {
+"name": "humidity",
+"active": true,
+"treatment": {
+"width": 16,
+"signed": false,
+"count": "1",
+"scaling": 10,
+"postprocess1": "",
+"postprocess2": "",
+"dweetname": "Humidity",
+"dweetval": "%v0%"
+}
+},
+"1BC5D5A5-0200-0B84-E211-8BE480C420CD": {
+"name": "pressure",
+"active": true,
+"treatment": {
+"width": 24,
+"signed": false,
+"count": "1",
+"scaling": 100,
+"postprocess1": "",
+"postprocess2": "",
+"dweetname": "Pressure",
+"dweetval": "%v0%"
+}
+}
+}
+},
+"1BC5D5A5-0200-B49A-E111-3ACF806E3620": {
+"name": "magnetometer",
+"active": true,
+"characteristics": {
+"1BC5D5A5-0200-73A0-E211-8CE4600BC502": {
+"name": "magnetometer",
+"active": true,
+"treatment": {
+"width": 16,
+"signed": true,
+"count": "3",
+"scaling": 1000,
+"postprocess1": "atan2(%v1%,%v0%)*180/pi",
+"postprocess2": "if(%p1%<0,360+%p1%,%p1%)",
+"dweetname": "Heading",
+"dweetval": "%p2%"
+}
+}
+}
+},
+"1BC5D5A5-0200-B49A-E111-3ACF806E3602": {
+"name": "sensorfusion",
+"active": false,
+"characteristics": {
+"1BC5D5A5-0200-36AC-E111-4BCF801B0A34": {
+"name": "sensorfusion",
+"active": true,
+"treatment": {
+"width": 16,
+"signed": true,
+"count": "3",
+"scaling": -10000,
+"postprocess1": "sqrt(1-(%v0%*%v0%)-(%v1%*%v1%)-(%v2%*%v2%))",
+"postprocess2": "",
+"dweetname": "Quat",
+"dweetval": "%v0%,%v1%,%v2%,%p1%"
+}
+}
+}
+}
+},
+"devName": "BlueMS1"
+}

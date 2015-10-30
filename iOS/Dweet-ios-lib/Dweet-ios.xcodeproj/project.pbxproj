@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		3ABD16EA1B2925450041FEDF /* universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3ABD16EB1B2925450041FEDF /* Build configuration list for PBXAggregateTarget "universal" */;
+			buildPhases = (
+				3ABD16EE1B2925690041FEDF /* Run Script */,
+			);
+			dependencies = (
+			);
+			name = universal;
+			productName = universal;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		3ABD16D41B2924E90041FEDF /* Dweet_ios.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3ABD16D31B2924E90041FEDF /* Dweet_ios.h */; };
+		3ABD16D61B2924E90041FEDF /* Dweet_ios.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD16D51B2924E90041FEDF /* Dweet_ios.m */; };
+		3ABD16DC1B2924E90041FEDF /* libDweet-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ABD16D01B2924E90041FEDF /* libDweet-ios.a */; };
+		3ABD16F61B2B7B210041FEDF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD16F51B2B7B210041FEDF /* Reachability.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3ABD16DD1B2924E90041FEDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3ABD16C81B2924E90041FEDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3ABD16CF1B2924E90041FEDF;
+			remoteInfo = "Dweet-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3ABD16CE1B2924E90041FEDF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				3ABD16D41B2924E90041FEDF /* Dweet_ios.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A16E9DF1B82C1AF00209FFD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3ABD16D01B2924E90041FEDF /* libDweet-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libDweet-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ABD16D31B2924E90041FEDF /* Dweet_ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dweet_ios.h; sourceTree = "<group>"; };
+		3ABD16D51B2924E90041FEDF /* Dweet_ios.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dweet_ios.m; sourceTree = "<group>"; };
+		3ABD16DB1B2924E90041FEDF /* Dweet-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dweet-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ABD16E11B2924E90041FEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ABD16F41B2B7B210041FEDF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3ABD16F51B2B7B210041FEDF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3ABD16CD1B2924E90041FEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ABD16D81B2924E90041FEDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ABD16DC1B2924E90041FEDF /* libDweet-ios.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3ABD16C71B2924E90041FEDF = {
+			isa = PBXGroup;
+			children = (
+				3A16E9DF1B82C1AF00209FFD /* SystemConfiguration.framework */,
+				3ABD16D21B2924E90041FEDF /* Dweet-ios */,
+				3ABD16DF1B2924E90041FEDF /* Dweet-iosTests */,
+				3ABD16D11B2924E90041FEDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3ABD16D11B2924E90041FEDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3ABD16D01B2924E90041FEDF /* libDweet-ios.a */,
+				3ABD16DB1B2924E90041FEDF /* Dweet-iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3ABD16D21B2924E90041FEDF /* Dweet-ios */ = {
+			isa = PBXGroup;
+			children = (
+				3ABD16D31B2924E90041FEDF /* Dweet_ios.h */,
+				3ABD16D51B2924E90041FEDF /* Dweet_ios.m */,
+				3ABD16F41B2B7B210041FEDF /* Reachability.h */,
+				3ABD16F51B2B7B210041FEDF /* Reachability.m */,
+			);
+			path = "Dweet-ios";
+			sourceTree = "<group>";
+		};
+		3ABD16DF1B2924E90041FEDF /* Dweet-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				3ABD16E01B2924E90041FEDF /* Supporting Files */,
+			);
+			path = "Dweet-iosTests";
+			sourceTree = "<group>";
+		};
+		3ABD16E01B2924E90041FEDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3ABD16E11B2924E90041FEDF /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3ABD16CF1B2924E90041FEDF /* Dweet-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ABD16E41B2924E90041FEDF /* Build configuration list for PBXNativeTarget "Dweet-ios" */;
+			buildPhases = (
+				3ABD16CC1B2924E90041FEDF /* Sources */,
+				3ABD16CD1B2924E90041FEDF /* Frameworks */,
+				3ABD16CE1B2924E90041FEDF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dweet-ios";
+			productName = "Dweet-ios";
+			productReference = 3ABD16D01B2924E90041FEDF /* libDweet-ios.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3ABD16DA1B2924E90041FEDF /* Dweet-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ABD16E71B2924E90041FEDF /* Build configuration list for PBXNativeTarget "Dweet-iosTests" */;
+			buildPhases = (
+				3ABD16D71B2924E90041FEDF /* Sources */,
+				3ABD16D81B2924E90041FEDF /* Frameworks */,
+				3ABD16D91B2924E90041FEDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3ABD16DE1B2924E90041FEDF /* PBXTargetDependency */,
+			);
+			name = "Dweet-iosTests";
+			productName = "Dweet-iosTests";
+			productReference = 3ABD16DB1B2924E90041FEDF /* Dweet-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3ABD16C81B2924E90041FEDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "PBJ Studios";
+				TargetAttributes = {
+					3ABD16CF1B2924E90041FEDF = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					3ABD16DA1B2924E90041FEDF = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					3ABD16EA1B2925450041FEDF = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3ABD16CB1B2924E90041FEDF /* Build configuration list for PBXProject "Dweet-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3ABD16C71B2924E90041FEDF;
+			productRefGroup = 3ABD16D11B2924E90041FEDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3ABD16CF1B2924E90041FEDF /* Dweet-ios */,
+				3ABD16DA1B2924E90041FEDF /* Dweet-iosTests */,
+				3ABD16EA1B2925450041FEDF /* universal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3ABD16D91B2924E90041FEDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3ABD16EE1B2925690041FEDF /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target ImageFilters ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target ImageFilters -configuration ${CONFIGURATION} -sdk iphonesimulator ARCHS=\"i386 x86_64\" BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3ABD16CC1B2924E90041FEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ABD16F61B2B7B210041FEDF /* Reachability.m in Sources */,
+				3ABD16D61B2924E90041FEDF /* Dweet_ios.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ABD16D71B2924E90041FEDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3ABD16DE1B2924E90041FEDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3ABD16CF1B2924E90041FEDF /* Dweet-ios */;
+			targetProxy = 3ABD16DD1B2924E90041FEDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3ABD16E21B2924E90041FEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3ABD16E31B2924E90041FEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3ABD16E51B2924E90041FEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3ABD16E61B2924E90041FEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3ABD16E81B2924E90041FEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Dweet-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3ABD16E91B2924E90041FEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Dweet-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3ABD16EC1B2925450041FEDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3ABD16ED1B2925450041FEDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3ABD16CB1B2924E90041FEDF /* Build configuration list for PBXProject "Dweet-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ABD16E21B2924E90041FEDF /* Debug */,
+				3ABD16E31B2924E90041FEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ABD16E41B2924E90041FEDF /* Build configuration list for PBXNativeTarget "Dweet-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ABD16E51B2924E90041FEDF /* Debug */,
+				3ABD16E61B2924E90041FEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ABD16E71B2924E90041FEDF /* Build configuration list for PBXNativeTarget "Dweet-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ABD16E81B2924E90041FEDF /* Debug */,
+				3ABD16E91B2924E90041FEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ABD16EB1B2925450041FEDF /* Build configuration list for PBXAggregateTarget "universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ABD16EC1B2925450041FEDF /* Debug */,
+				3ABD16ED1B2925450041FEDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3ABD16C81B2924E90041FEDF /* Project object */;
+}

@@ -1,0 +1,104 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1347\cocoasubrtf570
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red92\green38\blue153;\red170\green13\blue145;\red46\green13\blue110;
+\red63\green110\blue116;\red38\green71\blue75;\red28\green0\blue207;\red196\green26\blue22;}
+\margl1440\margr1440\vieww19600\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \
+Dweet-ios\
+\'97\'97\'97\'97\'97\'97\'97\
+\
+{\field{\*\fldinst{HYPERLINK "http://dweet.io"}}{\fldrslt dweet.io}} by Bug Labs provides a simple messaging and alert system for the \'91Internet of Things\'92. Any product, device, gadget or \'91thing\'92 connected to the Internet can use dweet.io to publish data to the cloud.\
+\
+The Dweet-ios library provides an easy-to-use interface to the dweet.io system for iOS projects.\
+\
+\
+Installation\
+\'97\'97\'97\'97\'97\'97\'97 \
+\
+Extract libDweet-ios.a and Dweet-ios.h from the archive. Add both files to your iOS project. Verify that libDweet-ios.a has been automatically included in the \'93Link Binary With Libraries\'94 list in the Build Phases tab of the project settings. If it is not in the list, add it manually by hitting the + button.\
+\
+libDweet-ios.a is a universal library, so it will work for all iOS devices as well as the iOS Simulator.\
+\
+\
+Library Usage\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+Before any data is published is sent to dweet.io from an iOS app, the app must connect to a dweet.io \'91thing\'92. There are two types of 
+\i things
+\i0 ; unlocked and locked. An unlocked thing can be accessed or updated by anyone that knows the name of the thing. A locked thing, can only be accessed or updated by someone knowing the name of the locked thing, as well as a key for the lock. \
+\
+To connect to an unlocked thing, the library method\
+\pard\tx264\pardeftab264\pardirnatural
+
+\f1\fs22 \cf0 \CocoaLigature0 + (\cf2 NSInteger\cf0 )connectToThing:(\cf2 NSString\cf0 *)thing;
+\f0\fs24 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 is called with the name of the thing. The method will return 0 on success and <0 in the case of an error. Error codes are defined in the library header file.\
+\
+To connect to a locked thing, the library method\
+\pard\tx264\pardeftab264\pardirnatural
+
+\f1\fs22 \cf0 \CocoaLigature0 + (\cf2 NSInteger\cf0 )connectToLockedThing:(\cf2 NSString\cf0 *)thing withKey:(\cf2 NSString\cf0 *)key;\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \CocoaLigature1 is called with the name of the thing and it\'92s key. The method will return 0 on success and <0 in the case of an error.\
+\
+The library cannot connect to more than one thing at once (unlocked or locked). If these methods are called multiple times, the latest successful method call is the true connected thing.\
+\
+Once the app is connected to a thing, it can start to send data to dweet.io. There are 2 methods for sending data; a blocking method, and a non-blocking method. \
+\
+The simplest method for sending data to dweet.io is\
+\pard\tx264\pardeftab264\pardirnatural
+
+\f1\fs22 \cf0 \CocoaLigature0 + (\cf2 NSInteger\cf0 )sendDweet:(\cf2 NSDictionary\cf0 *)data;\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \CocoaLigature1 This method takes an NSDictionary as an input and converts it to a JSON formatted string, which is then sent to dweet.io for the connected thing. This method will block until dweet.io receives the data, or an error is encountered. A value of 0 is returned on success, and <0 in the case of an error. The blocking nature or this method means that it is possible that a large amount of time (tens of seconds) could pass before the method returns if there are connectivity issues. This method should not be called from multiple threads.\
+\
+The non-blocking alternative for sending data to dweet.io is\
+\pard\tx264\pardeftab264\pardirnatural
+
+\f1\fs22 \cf0 \CocoaLigature0 + (\cf2 NSInteger\cf0 )sendDweetAsync:(\cf2 NSDictionary\cf0 *)data;\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \CocoaLigature1 Again, this method takes an NSDictionary as an input and converts it to a JSON formatted string, which is then sent to dweet.io for the connected thing. The difference is that this method will return immediately with 0 for success and <0 for an error. The sending action then continues in a separately spawned thread. If the method is called again before the previous send action is complete, then the previous sending thread is terminated and replaced by a new thread for the new data. Essentially the old data to be sent to dweet.io is overwritten with the new data. \
+\
+\
+Example Code\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+The following example shows connecting to an unlocked thing, and setting up a timer to send a dweet of the device screen brightness every 2 seconds.\
+\pard\tx264\pardeftab264\pardirnatural
+
+\f1\fs22 \cf0 \CocoaLigature0 \
+- (\cf3 void\cf0 )viewDidLoad \{\
+  [\cf3 super\cf0  \cf4 viewDidLoad\cf0 ];\
+  \
+	\cf2 NSInteger\cf0  err = [\cf5 Dweet_ios\cf0  \cf6 connectToThing\cf0 :\cf5 @\'93my_thing_name\'94\cf0 ];\
+	if (err) \{\
+    // handle error\
+  \}\
+\
+  NSTimer *\cf5 runloop\cf0  = [\cf2 NSTimer\cf0  \cf4 scheduledTimerWithTimeInterval\cf0 :\cf7 2\cf0  \cf4 target\cf0 :\cf3 self\cf0  \cf4 selector\cf0 :\cf3 @selector\cf0 (handleTimer:) \cf4 userInfo\cf0 :\cf3 nil\cf0  \cf4 repeats\cf0 :\cf3 YES\cf0 ];\
+\}\
+\
+\
+- (\cf3 void\cf0 ) handleTimer:(\cf2 NSTimer\cf0  *)theTimer \{\
+\
+  \cf3 float\cf0  b = [\cf2 UIScreen\cf0  \cf4 mainScreen\cf0 ].\cf2 brightness\cf0 ;\
+  \cf3 int\cf0  bi = b*\cf7 100\cf0 ;\
+  \cf4 NSLog\cf0 (\cf8 @\'93screen brightness is %d%%"\cf0 ,bi);\
+\
+  // the thing will be updated to have the term \'93brightness\'94 set to the current screen brightness\
+  \cf2 NSDictionary\cf0  *dict = [\cf2 NSDictionary\cf0  \cf4 dictionaryWithObjectsAndKeys\cf0 :[\cf2 NSNumber\cf0  \cf4 numberWithInteger\cf0 :bi],\cf8 @"brightness"\cf0 , \cf3 nil\cf0 ];\
+\
+  [\cf5 Dweet_ios\cf0  \cf6 sendDweet\cf0 :dict];\
+\
+\}\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \CocoaLigature1 \
+\
+}

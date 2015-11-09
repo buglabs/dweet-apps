@@ -90,8 +90,8 @@ public class DeviceScan extends ListActivity {
         ////////////////////////////////
         // remove this if you don't want the
         // thing name to randomize every time
-        editor.putString("thingName", "");
-        editor.commit();
+        //editor.putString("thingName", "");
+        //editor.commit();
         /////////////////////////////
 
 

@@ -77,7 +77,7 @@
   /////////////////
   // remove the next line if you don't
   // want a new random thing name each time app starts
-  savedThing = nil;
+  //savedThing = nil;
   /////////////////
   
   // there is no saved thing name, generate a new random name

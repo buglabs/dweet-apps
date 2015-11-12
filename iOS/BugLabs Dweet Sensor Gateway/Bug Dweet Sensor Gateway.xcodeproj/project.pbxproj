@@ -10,8 +10,6 @@
 		3A16E9E41B82C2B700209FFD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A16E9E21B82C23500209FFD /* SystemConfiguration.framework */; };
 		3A29469E1B9A8730005D2610 /* Blue6180.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A29469D1B9A8730005D2610 /* Blue6180.txt */; };
 		3A4E42851BA74F8900036C7E /* buglogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A4E42841BA74F8900036C7E /* buglogo.png */; };
-		3A505C2A1B90FF64007608FC /* Dweet_ios.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A505C271B90FF64007608FC /* Dweet_ios.m */; };
-		3A505C2B1B90FF64007608FC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A505C291B90FF64007608FC /* Reachability.m */; };
 		3A56A9941B4EFFD900081FAC /* DweetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A56A9931B4EFFD900081FAC /* DweetController.m */; };
 		3A56A99F1B503C8300081FAC /* ConfigController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A56A99E1B503C8300081FAC /* ConfigController.m */; };
 		3A65B21D1B4EF2580065C853 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A65B21C1B4EF2580065C853 /* main.m */; };
@@ -20,6 +18,8 @@
 		3A65B2281B4EF2580065C853 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A65B2271B4EF2580065C853 /* Images.xcassets */; };
 		3A65B2371B4EF2590065C853 /* Dweet_Sensor_GatewayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A65B2361B4EF2590065C853 /* Dweet_Sensor_GatewayTests.m */; };
 		3A8701421B92280B007BB116 /* BlueMS1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3A8701411B92280B007BB116 /* BlueMS1.txt */; };
+		3AA4F11B1BF2A2B700F74701 /* libDweet-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA4F11A1BF2A2B700F74701 /* libDweet-ios.a */; };
+		3AA4F11E1BF2A2C500F74701 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4F11D1BF2A2C500F74701 /* Reachability.m */; };
 		3AC6436C1B8D499900516559 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AC643661B8D48BF00516559 /* LaunchScreen.xib */; };
 		3AC6436D1B8D49A100516559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AC643681B8D48BF00516559 /* Main.storyboard */; };
 		3AE0EEE61B5972030012DB5B /* stlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AE0EEE51B5972030012DB5B /* stlogo.png */; };
@@ -68,10 +68,6 @@
 		3A16E9E21B82C23500209FFD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3A29469D1B9A8730005D2610 /* Blue6180.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Blue6180.txt; sourceTree = "<group>"; };
 		3A4E42841BA74F8900036C7E /* buglogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buglogo.png; sourceTree = "<group>"; };
-		3A505C261B90FF64007608FC /* Dweet_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dweet_ios.h; path = "../Dweet-ios/Dweet-ios/Dweet_ios.h"; sourceTree = "<group>"; };
-		3A505C271B90FF64007608FC /* Dweet_ios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dweet_ios.m; path = "../Dweet-ios/Dweet-ios/Dweet_ios.m"; sourceTree = "<group>"; };
-		3A505C281B90FF64007608FC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "../Dweet-ios/Dweet-ios/Reachability.h"; sourceTree = "<group>"; };
-		3A505C291B90FF64007608FC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "../Dweet-ios/Dweet-ios/Reachability.m"; sourceTree = "<group>"; };
 		3A56A9921B4EFFD900081FAC /* DweetController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DweetController.h; sourceTree = "<group>"; };
 		3A56A9931B4EFFD900081FAC /* DweetController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DweetController.m; sourceTree = "<group>"; };
 		3A56A99D1B503C8300081FAC /* ConfigController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigController.h; sourceTree = "<group>"; };
@@ -88,6 +84,10 @@
 		3A65B2351B4EF2590065C853 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A65B2361B4EF2590065C853 /* Dweet_Sensor_GatewayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dweet_Sensor_GatewayTests.m; sourceTree = "<group>"; };
 		3A8701411B92280B007BB116 /* BlueMS1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BlueMS1.txt; sourceTree = "<group>"; };
+		3AA4F1191BF2A2B700F74701 /* Dweet_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dweet_ios.h; sourceTree = "<group>"; };
+		3AA4F11A1BF2A2B700F74701 /* libDweet-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libDweet-ios.a"; sourceTree = "<group>"; };
+		3AA4F11C1BF2A2C500F74701 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3AA4F11D1BF2A2C500F74701 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		3AC643671B8D48BF00516559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		3AC643691B8D48BF00516559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		3AE0EEE51B5972030012DB5B /* stlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stlogo.png; sourceTree = "<group>"; };
@@ -153,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A16E9E41B82C2B700209FFD /* SystemConfiguration.framework in Frameworks */,
+				3AA4F11B1BF2A2B700F74701 /* libDweet-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,10 +170,6 @@
 		3A65B20E1B4EF2580065C853 = {
 			isa = PBXGroup;
 			children = (
-				3A505C261B90FF64007608FC /* Dweet_ios.h */,
-				3A505C271B90FF64007608FC /* Dweet_ios.m */,
-				3A505C281B90FF64007608FC /* Reachability.h */,
-				3A505C291B90FF64007608FC /* Reachability.m */,
 				3A16E9E21B82C23500209FFD /* SystemConfiguration.framework */,
 				3A65B2191B4EF2580065C853 /* Dweet Sensor Gateway */,
 				3A65B2331B4EF2590065C853 /* Dweet Sensor GatewayTests */,
@@ -192,6 +189,10 @@
 		3A65B2191B4EF2580065C853 /* Dweet Sensor Gateway */ = {
 			isa = PBXGroup;
 			children = (
+				3AA4F11C1BF2A2C500F74701 /* Reachability.h */,
+				3AA4F11D1BF2A2C500F74701 /* Reachability.m */,
+				3AA4F1191BF2A2B700F74701 /* Dweet_ios.h */,
+				3AA4F11A1BF2A2B700F74701 /* libDweet-ios.a */,
 				3AE95E571B97A7A000AD21A5 /* DDMathParser1.1 */,
 				3A8701411B92280B007BB116 /* BlueMS1.txt */,
 				3A29469D1B9A8730005D2610 /* Blue6180.txt */,
@@ -360,7 +361,7 @@
 		3A65B20F1B4EF2580065C853 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "PBJ Studios";
 				TargetAttributes = {
 					3A65B2161B4EF2580065C853 = {
@@ -438,13 +439,13 @@
 				3AE95E921B97A7A000AD21A5 /* DDExpressionRewriter.m in Sources */,
 				3A65B2231B4EF2580065C853 /* ScanController.m in Sources */,
 				3AE95E8A1B97A7A000AD21A5 /* _DDMathTermResolver.m in Sources */,
+				3AA4F11E1BF2A2C500F74701 /* Reachability.m in Sources */,
 				3AE95E981B97A7A000AD21A5 /* DDMathTokenInterpreter.m in Sources */,
 				3AE95E8E1B97A7A000AD21A5 /* _DDRewriteRule.m in Sources */,
 				3AE95E951B97A7A000AD21A5 /* DDMathOperatorSet.m in Sources */,
 				3A56A99F1B503C8300081FAC /* ConfigController.m in Sources */,
 				3AE95E9B1B97A7A000AD21A5 /* DDTypes.m in Sources */,
 				3A56A9941B4EFFD900081FAC /* DweetController.m in Sources */,
-				3A505C2B1B90FF64007608FC /* Reachability.m in Sources */,
 				3A65B2201B4EF2580065C853 /* AppDelegate.m in Sources */,
 				3AE95E891B97A7A000AD21A5 /* _DDFunctionExpression.m in Sources */,
 				3AE95E881B97A7A000AD21A5 /* _DDFunctionEvaluator.m in Sources */,
@@ -453,7 +454,6 @@
 				3AE95E941B97A7A000AD21A5 /* DDMathOperator.m in Sources */,
 				3A65B21D1B4EF2580065C853 /* main.m in Sources */,
 				3AE95E971B97A7A000AD21A5 /* DDMathToken.m in Sources */,
-				3A505C2A1B90FF64007608FC /* Dweet_ios.m in Sources */,
 				3AE95E871B97A7A000AD21A5 /* _DDDecimalFunctions.m in Sources */,
 				3AE95E8F1B97A7A000AD21A5 /* _DDVariableExpression.m in Sources */,
 				3AE95E901B97A7A000AD21A5 /* DDEnumerator.m in Sources */,
@@ -518,7 +518,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -562,6 +564,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -592,7 +595,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dweet\\ Sensor\\ Gateway",
+					"$(PROJECT_DIR)/Dweet",
+					Sensor,
+					Gateway,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.buglabs.iotgateway;
 				PRODUCT_NAME = "Bug Dweet Sensor Gateway";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -611,7 +618,11 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dweet\\ Sensor\\ Gateway",
+					"$(PROJECT_DIR)/Dweet",
+					Sensor,
+					Gateway,
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.buglabs.iotgateway;
 				PRODUCT_NAME = "Bug Dweet Sensor Gateway";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -632,6 +643,7 @@
 				);
 				INFOPLIST_FILE = "Dweet Sensor GatewayTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pbj.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Bug Dweet Sensor GatewayTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bug Dweet Sensor Gateway.app/Bug Dweet Sensor Gateway";
 			};
@@ -647,6 +659,7 @@
 				);
 				INFOPLIST_FILE = "Dweet Sensor GatewayTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pbj.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Bug Dweet Sensor GatewayTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bug Dweet Sensor Gateway.app/Bug Dweet Sensor Gateway";
 			};

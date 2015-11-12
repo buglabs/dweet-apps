@@ -107,7 +107,7 @@
   tapPromptLabel.text = @"thing name updated";
   
   // save the new thing name
-  savedThing = textField.text;
+  savedThing = check;
   [[NSUserDefaults standardUserDefaults] setObject:savedThing forKey:@"thing"];
   
   // adjust the label text

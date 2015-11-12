@@ -11,6 +11,8 @@
 		3A02F7D21BBB841C006B2CD3 /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A02F7CE1BBB841C006B2CD3 /* Default-667h@2x.png */; };
 		3A02F7D31BBB841C006B2CD3 /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A02F7CF1BBB841C006B2CD3 /* Default-736h@3x.png */; };
 		3A02F7D41BBB841C006B2CD3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A02F7D01BBB841C006B2CD3 /* Default.png */; };
+		3AA4F1151BF2837200F74701 /* libDweet-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AA4F1141BF2837200F74701 /* libDweet-ios.a */; };
+		3AA4F1181BF2838800F74701 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4F1171BF2838800F74701 /* Reachability.m */; };
 		3AABC4711BBB88BF00898677 /* buglogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AABC4701BBB88BF00898677 /* buglogo.png */; };
 		3AABC4741BBB88FB00898677 /* adjectives.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3AABC4721BBB88FB00898677 /* adjectives.txt */; };
 		3AABC4751BBB88FB00898677 /* nouns.txt in Resources */ = {isa = PBXBuildFile; fileRef = 3AABC4731BBB88FB00898677 /* nouns.txt */; };
@@ -24,8 +26,6 @@
 		3ABD16AC1B27CD160041FEDF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ABD16AB1B27CD160041FEDF /* Images.xcassets */; };
 		3ABD16AF1B27CD160041FEDF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3ABD16AD1B27CD160041FEDF /* LaunchScreen.xib */; };
 		3ABD16BB1B27CD160041FEDF /* dweet_ios_sensorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD16BA1B27CD160041FEDF /* dweet_ios_sensorTests.m */; };
-		3ABD16FB1B2B802F0041FEDF /* Dweet_ios.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD16F81B2B802F0041FEDF /* Dweet_ios.m */; };
-		3ABD16FC1B2B802F0041FEDF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD16FA1B2B802F0041FEDF /* Reachability.m */; };
 		3ABD16FE1B2D1D200041FEDF /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ABD16FD1B2D1D200041FEDF /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +44,10 @@
 		3A02F7CE1BBB841C006B2CD3 /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		3A02F7CF1BBB841C006B2CD3 /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		3A02F7D01BBB841C006B2CD3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3AA4F1131BF2833200F74701 /* Dweet_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dweet_ios.h; sourceTree = "<group>"; };
+		3AA4F1141BF2837200F74701 /* libDweet-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libDweet-ios.a"; sourceTree = "<group>"; };
+		3AA4F1161BF2838800F74701 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3AA4F1171BF2838800F74701 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		3AABC4701BBB88BF00898677 /* buglogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buglogo.png; sourceTree = "<group>"; };
 		3AABC4721BBB88FB00898677 /* adjectives.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = adjectives.txt; sourceTree = "<group>"; };
 		3AABC4731BBB88FB00898677 /* nouns.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nouns.txt; sourceTree = "<group>"; };
@@ -64,10 +68,6 @@
 		3ABD16B41B27CD160041FEDF /* dweet-ios-sensorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dweet-ios-sensorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ABD16B91B27CD160041FEDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ABD16BA1B27CD160041FEDF /* dweet_ios_sensorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dweet_ios_sensorTests.m; sourceTree = "<group>"; };
-		3ABD16F71B2B802F0041FEDF /* Dweet_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Dweet_ios.h; path = "../../Dweet-ios/Dweet-ios/Dweet_ios.h"; sourceTree = "<group>"; };
-		3ABD16F81B2B802F0041FEDF /* Dweet_ios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Dweet_ios.m; path = "../../Dweet-ios/Dweet-ios/Dweet_ios.m"; sourceTree = "<group>"; };
-		3ABD16F91B2B802F0041FEDF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = "../../Dweet-ios/Dweet-ios/Reachability.h"; sourceTree = "<group>"; };
-		3ABD16FA1B2B802F0041FEDF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = "../../Dweet-ios/Dweet-ios/Reachability.m"; sourceTree = "<group>"; };
 		3ABD16FD1B2D1D200041FEDF /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -77,6 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AABC47C1BBFED6600898677 /* AVFoundation.framework in Frameworks */,
+				3AA4F1151BF2837200F74701 /* libDweet-ios.a in Frameworks */,
 				3AABC47A1BBB952D00898677 /* CoreLocation.framework in Frameworks */,
 				3ABD16FE1B2D1D200041FEDF /* CoreMotion.framework in Frameworks */,
 			);
@@ -128,6 +129,10 @@
 		3ABD169D1B27CD160041FEDF /* dweet-ios-sensor */ = {
 			isa = PBXGroup;
 			children = (
+				3AA4F1161BF2838800F74701 /* Reachability.h */,
+				3AA4F1171BF2838800F74701 /* Reachability.m */,
+				3AA4F1141BF2837200F74701 /* libDweet-ios.a */,
+				3AA4F1131BF2833200F74701 /* Dweet_ios.h */,
 				3AABC4761BBB899200898677 /* ConfigController.h */,
 				3AABC4771BBB899200898677 /* ConfigController.m */,
 				3AABC4721BBB88FB00898677 /* adjectives.txt */,
@@ -137,10 +142,6 @@
 				3ABD16A31B27CD160041FEDF /* AppDelegate.m */,
 				3ABD16A51B27CD160041FEDF /* ViewController.h */,
 				3ABD16A61B27CD160041FEDF /* ViewController.m */,
-				3ABD16F71B2B802F0041FEDF /* Dweet_ios.h */,
-				3ABD16F81B2B802F0041FEDF /* Dweet_ios.m */,
-				3ABD16F91B2B802F0041FEDF /* Reachability.h */,
-				3ABD16FA1B2B802F0041FEDF /* Reachability.m */,
 				3ABD16A81B27CD160041FEDF /* Main.storyboard */,
 				3ABD16AB1B27CD160041FEDF /* Images.xcassets */,
 				3ABD16AD1B27CD160041FEDF /* LaunchScreen.xib */,
@@ -284,11 +285,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ABD16A71B27CD160041FEDF /* ViewController.m in Sources */,
-				3ABD16FB1B2B802F0041FEDF /* Dweet_ios.m in Sources */,
 				3ABD16A41B27CD160041FEDF /* AppDelegate.m in Sources */,
 				3ABD16A11B27CD160041FEDF /* main.m in Sources */,
-				3ABD16FC1B2B802F0041FEDF /* Reachability.m in Sources */,
 				3AABC4781BBB899200898677 /* ConfigController.m in Sources */,
+				3AA4F1181BF2838800F74701 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +350,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -395,6 +396,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
